@@ -1,0 +1,520 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color:whitesmoke;
+}
+.booknow-btn{
+    text-align: center;
+    place-self: center;
+    border:0.5px solid black;
+    border-radius:3px;
+    background-color:#9B82A7;
+    padding:10px 30px;
+    font-size:1.25rem;
+}
+.booknow-btn:hover{
+    background-color:rgb(159, 139, 159);
+}
+.booknow-btn a{
+    color:purple;
+    text-decoration: none;
+}
+.booknow-btn a:hover{
+    color:rgb(49, 6, 55);
+    text-decoration:underline;
+}
+/* --------------------------------- */
+.offer{
+    display:flex;
+    justify-content: space-between;
+    padding:20px 150px;
+    font-family: 'Open Sans', sans-serif;
+    /* background-color:#5900FB; */
+}
+.offer .contact{
+    display:flex;
+}
+.offer .contact img{
+    height:30px;
+    margin-right:10px;
+}
+.offer .email{
+    display: flex;
+}
+.offer .email img{
+    height:40px;
+    margin-right:10px;
+}
+.offer .numbers{
+    font-size:1.5rem;
+    font-weight: 450;
+    color:#7445A7;
+    font-style: italic;
+}
+.offer a{
+    text-decoration: none;
+    color:#7445A7;
+}
+.offer a:hover{
+    color:#827f40;
+    text-decoration: underline;
+}
+.thick-line{
+    height:2px;
+    background-color: black;
+}
+/* ------------------------------------------------ */
+#nav{
+    z-index:100;
+    height:75px;
+    background-color:white;
+    position:sticky;
+    top:0px;
+    display:grid;
+    grid-template-columns: repeat(13,1fr);  
+}
+#nav .hotel-name{
+    grid-column-start:2;
+    grid-column-end:4;
+    /* text-align: center; */
+    place-self: center;
+}
+#nav .hotel-name a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:#7445A7;
+    font-family: 'Source Serif 4', serif;
+}
+#nav .link{
+    text-align:center;
+    place-self: center;
+}
+#nav .first{
+    grid-column:5;
+}
+#nav .second{
+    grid-column:6; 
+}
+#nav .third{
+    grid-column:7; 
+}
+#nav .forth{
+    grid-column:8; 
+}
+#nav .link a{
+    text-decoration: none;
+    color:black;
+    place-self: center;
+    font-size:1.25rem;
+}
+#nav .link a:hover{
+    color:rgb(114, 32, 114);
+    text-decoration: underline;
+}
+#nav .grid{
+    grid-column:11/14;
+}
+#nav .login-btn{
+    grid-column: 10;
+    text-align: center;
+    place-self: center;
+}
+#nav .login-btn img{
+    height:50px;
+}
+
+
+/* ---------------------------------------- */
+#main{
+    width:100%;
+    height:100vh;
+    background:url('./assets/lobbby.jpg') no-repeat center center/cover;
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+
+}
+#main::before{
+    content:'';
+    position: absolute;
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,0.3);
+}
+#main .heading{
+    color:white;
+    width:fit-content;
+    border:0.25px solid white;
+    border-radius:2px;
+    background-color:#9B82A7;
+    padding:10px;
+    margin-left:100px;
+    font-size:1.5rem;
+    opacity: 0.7;
+    font-family: 'Source Serif 4', serif;
+}
+#main .heading span{
+    font-weight:bolder;
+} 
+#main .tag-line{
+    color:white;
+    font-size: 4rem;
+    margin-left:100px;
+    font-family: 'Poppins', sans-serif;
+}
+#main .tag-line span{
+    font-size:1.2rem;
+    font-family: 'Source Serif 4', serif;
+}
+#main .box{
+    background-color:#FFFAFD;
+    display:grid;
+    padding:30px 10px;
+    grid-template-columns: repeat(7,1fr);
+    margin: 0px 100px;
+}
+#main .box .check img{
+    height:30px;
+    padding-right:20px;
+}
+#main .box .check{
+    border:0.5px black solid;
+    padding:5px 100px 5px 20px;
+    display:flex;
+    align-items: center;
+    font-family: 'Source Serif 4', serif;
+}
+#main .box .in{
+    grid-column:1/3;
+    place-self: center;
+}
+#main .box .out{
+    grid-column:3/5;
+    place-self: center;
+}
+#main .box .room-type{
+    grid-column:5/7;
+    place-self: center;
+}
+#main .box .booknow-btn{
+    grid-column:7/8;
+}
+#main *{
+    z-index:10;
+}
+/* ----------------------------------- */
+#randtext{
+    display:flex;
+    margin:30px 100px;
+    margin-bottom:75px;
+}
+#randtext .text{
+    width:50%;
+    line-height:1.8rem;
+}
+
+#randtext .text p{
+    font-size:1.5rem;
+    line-height:2rem;
+}
+#randtext .text span{
+    font-style: italic;
+    font-size: 1.5rem;
+    color:#7445A7;
+}
+#randtext .text h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size:3rem;
+    line-height:3.5rem;
+    margin:20px 0px;
+}
+#randtext h3{
+    margin-top:20px;
+    color:#7445A7;
+}
+
+#randtext .text img{
+    height:100px;
+    border-radius:50%;
+}
+#randtext .manager{
+    display:flex;
+    margin-top:20px;
+}
+#randtext .manager > div{
+    text-align: center;
+    margin-left:10px;
+}
+#randtext .image{
+    height:100vh;
+    width:50%;
+    background: url('./assets/hotel.jpg')no-repeat center center/cover;
+    border-radius:50px;
+    align-self: center;;
+}
+/* ---------------------------------------------- */
+#gallery{
+    display: flex;
+    flex-direction: column ;
+    margin:100px;
+    margin-top:50px;
+}
+#gallery .album{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+#gallery .container img{
+    width:100%;
+    height:100%;
+}
+#gallery .album h3{
+    font-size:2rem;
+    font-weight: 900;
+    font-family: 'Dancing Script', cursive;
+    color:#7445A7;
+}
+#gallery .album p{
+    font-size:3rem;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+#gallery .container{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(4,300px);
+}
+#gallery .container .img1{
+    grid-area:1/1/2/2;
+    height:100%;
+    width:100%;
+}
+#gallery .container .img2{
+    grid-area:1/2/2/3;
+    height:100%;
+    width:100%;
+}
+#gallery .container .img3{
+    grid-area:1/3/3/4;
+    width:100%;
+    height:100%;
+}
+#gallery .container .img4{
+    grid-area:2/1/3/2;
+    height:100%;
+    width:100%;
+}
+#gallery .container .img5{
+    grid-area:2/2/4/3;
+    height:100%;
+    width:100%;
+}
+#gallery .container .img6{
+    grid-area:3/1/4/2;
+    height:100%;
+    width:100%;
+}
+#gallery .container .img7{
+    grid-area:4/1/5/2;
+    height:100%;
+    width:100%;
+}
+#gallery .container .img8{
+    grid-area: 4/2/5/3;
+    height:100%;
+    width:100%;
+}
+#gallery .container .img9{
+    grid-area:3/3/5/4 ;
+    height:100%;
+    width:100%;
+}
+.thin-line{
+    line-height: 0.5px;
+    margin:0px 100px;
+}
+/* ------------------------------------------ */
+#facilities{
+    display:flex;
+    
+    background-color:rgb(223, 218, 218);
+}
+#facilities .icons{
+    width:50%;
+    margin:50px;
+}
+#facilities .icons .icons-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.icons-text{
+    text-align:center;
+}
+.icons-text h3{
+    font-family: 'Dancing Script', cursive;
+    font-size:2rem;
+    color:#7445A7;
+}
+.first-row{
+    display:flex;
+    justify-content: center;
+}
+.second-row{
+    display: flex;
+    justify-content: center;
+}
+.icons-image{
+    margin:5px;
+    background:whitesmoke
+}
+.icons-image img{
+    padding:10px;
+    padding-bottom:5px;
+}
+#facilities .res-img{
+    width:50%;
+    background:url('./assets/res1.jpg') no-repeat center center/cover;
+    margin:50px;
+}  
+.res-img img{
+    width:100%;
+    height:100%;
+}
+/* ----------------------------------------- */
+#end{
+    display:flex;
+    flex-direction: column;
+    background:black;
+    color:white;
+}
+#end .about{
+    display:flex;
+    margin:50px;
+}
+.about .about-txt{
+    display: flex;
+    width:33%;
+    flex-direction: column;
+}
+.about-txt h3{
+    color:#7445A7;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom:20px;
+}
+.about-txt p{
+    font-size:1.25rem;
+    line-height:2rem;
+    font-family: 'Source Serif 4', serif;
+    margin-bottom:50px;
+}
+.about-txt a{
+    text-decoration: none;
+    color:white;
+    border:0.1px white solid;
+    margin:5px;
+    padding:10px 20px;
+    font-size: 1rem;
+    border-radius:2.5px;
+}    
+.about-txt a:hover{
+    background-color:rgb(121, 66, 66);
+    color:rgb(186, 142, 142);
+}
+.signs{
+    width:33%;
+    border:0.5px white solid;
+    border-radius:0px 0px 50% 50%;
+    margin:0px 50px;
+}
+.signs>div{
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+.signs>div>div{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+.signs h1{
+    margin-bottom:20px;
+    font-family: 'Source Serif 4', serif;
+}
+.signs img{
+    height:30px;
+    width:30px;
+    margin:10px;
+    text-align: center;
+}
+.about-contact{
+    width:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left:20px;
+}
+.about-contact>div{
+    display:flex;
+}
+.about-contact img{
+    width:30px;
+    height:30px;
+    border:2px solid #7445A7;
+    border-radius:50%;
+    padding:7.5px;
+}
+.about-contact p{
+    margin-left:20px;
+    line-height:1.75rem;
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.9rem;
+}
+.about-contact h2{
+    color:#7445A7;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom:20px;
+}
+.space{
+    line-height:0.5px;
+    background-color:grey;
+    margin:10px 0px;
+}
+.end-nav{
+    margin:25px 100px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.end-nav a{
+    text-decoration: none;
+    color:white;
+}
+.end-nav a:hover{
+    color:#7445A7;
+    text-decoration: underline;;
+}
+.copyright{
+    margin:20px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright p{
+    font-size: 1.25rem;
+}
+.copyright span{
+    color:#7445A7;
+}
+.copyright img{
+    width:30px;
+    height:30px;
+    text-align: center;;
+}
